@@ -1,11 +1,14 @@
+import React, {useState} from 'react'
 import './Calculator.css'
 import Button from './Button';
 import Input from './Input';
 
 function Calculator() {
+    const [input, setInput] = useState("");
+
     return ( 
         <div className="calc-wrapper">
-            <Input />
+            <Input value={input} />
             <div className="calc-row">
                 <Button value='7'/>
                 <Button value='8'/>
