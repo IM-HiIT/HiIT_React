@@ -2,9 +2,8 @@ import './Button.css'
 
 function Button(props) {
     // Return value on Click
-    function buttonClick (value, e) {
-        console.log("V: "+value);
-        console.log("E: "+e.type);
+    function buttonClick () {
+        props.handleClick(props.value);
     }
 
     // React event 
@@ -12,7 +11,7 @@ function Button(props) {
         <button 
          type='button' 
          className="calc-button" 
-         onClick={(event) => buttonClick(props.value, event)}>
+         onClick={buttonClick}>
             {props.value}
         </button>
     );

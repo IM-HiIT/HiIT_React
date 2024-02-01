@@ -1,7 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Calculator from './components/Calculator.js';
+import Brand from './components/Brand.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-root.render(<Calculator />);
+/** Componenten opsplitsen
+ * See Components folder for Brand.js and Car.js
+ */
+root.render(<Brand/>);

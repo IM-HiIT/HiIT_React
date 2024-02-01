@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import User from "./User";
 
 
@@ -17,6 +17,13 @@ function Users() {
     }]
 
     const [users, setUsers] = useState(dataUsers);
+
+    useEffect(() => {
+        axios
+         .get("https://randomuser.me/api/?page=0&results=20")
+         .then((response) => setUsers(response.data.results))
+         .catch((error) => console.log(error));
+    });
 
     return (
         <>
