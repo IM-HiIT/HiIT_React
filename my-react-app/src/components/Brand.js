@@ -4,7 +4,12 @@ import Car from './Car.js';
  * @returns Car brands
  */
 function Brand() {
-    return (<><Car brand="Volvo"/><Car brand="Peugeot"/><Car brand="Mercedes"/></>
+    return (
+      <>
+      <Car brand="Volvo"/>
+      <Car brand="Peugeot"/>
+      <Car brand="Mercedes"/>
+      </>
     );
   }
 

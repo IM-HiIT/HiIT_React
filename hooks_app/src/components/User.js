@@ -1,11 +1,11 @@
 import {memo } from 'react';
 
-function User({users, onItemClick}) => {
+//function User({users, onItemClick}) => {}
 
-} {
+
 // const { name, email} = props;
 // const { first, last} = name;
-
+function User(){
     return (
         <>
         <div>
