@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Brand from './components/Brand.js';
 import Timer from './components/Timer.js';
+import PropDrill from './components/PropDrill.js';
+import PropUseContext from './components/PropUseContext.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -10,3 +12,5 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
  */
 root.render(<Brand/>);
 root.render(<Timer/>);
+root.render(<PropDrill/>);
+root.render(<PropUseContext/>);
