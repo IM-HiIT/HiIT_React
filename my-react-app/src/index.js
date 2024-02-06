@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Brand from './components/Brand.js';
+import Timer from './components/Timer.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -8,3 +9,4 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
  * See Components folder for Brand.js and Car.js
  */
 root.render(<Brand/>);
+root.render(<Timer/>);
