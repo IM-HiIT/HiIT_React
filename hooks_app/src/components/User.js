@@ -1,19 +1,21 @@
-import {memo } from 'react';
+import { memo } from 'react';
 
-//function User({users, onItemClick}) => {}
+const User = ({users, onItemClick}) => {
+    console.log("User Render");
 
-
-// const { name, email} = props;
-// const { first, last} = name;
-function User(){
     return (
         <>
-        <div>
-            <p>Name: {first} {last}</p>
-            <p>Email: {email}</p>
-        </div>
+        {users.map((user, index) => {
+            return (
+                <div onClick={onItemClick} key={index}>
+                    <p>Name: {user.name.first} {user.name.last }</p>
+                    <p>Email: {user.email}</p>
+                    <hr />
+                </div>
+            );
+        })}
         </>
     );
-}
+};
 
-export default User;
+export default memo(User);
