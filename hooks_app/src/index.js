@@ -1,9 +1,13 @@
-import React, {useState, useEffect, useCallback, useMemo} from 'react';
+import React, {useState, useCallback, useMemo} from 'react';
 import ReactDOM from 'react-dom/client';
-import axios from 'axios';
 import User from './components/User.js';
+import useFetch from './useFetch.js';
 
-
+/**
+ * 
+ * @param {*} num 
+ * @returns 
+ */
 const expensiveCalc = (num) => {
     console.log("Calculating....");
     for (let i = 0; i < 10000; i++) {
@@ -12,16 +16,13 @@ const expensiveCalc = (num) => {
     return num;
 };
 
-
-
 /**
  * 
  * @returns 
  */
 function Users() {
-    const [users, setUsers] = useState([]);
+    const [users] = useFetch();
     const [count, setCount] = useState(0);
-
     const calculation = useMemo(() => expensiveCalc(count), [count]);
 
     const onItemClick = useCallback((event) => {
@@ -31,13 +32,6 @@ function Users() {
     const increment = () => {
         setCount((c) => c + 1 );
     }
-
-    useEffect(() => {
-        axios
-         .get("https://randomuser.me/api/?page=0&results=20")
-         .then((response) => setUsers(response.data.results))
-         .catch((error) => console.log(error));
-    }, []);
 
     return (
         <>
