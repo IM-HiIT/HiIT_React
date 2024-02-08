@@ -14,6 +14,7 @@ import FocusAfterLoad from './components/FocusAfterLoad.js';
 
 import Counter from './components/Counter.js'
 import Account from './components/Account.js'
+import MyForm from './components/MyForm.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -31,5 +32,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(<DOMElements/>);
 // root.render(<FocusAfterLoad/>);
 
-root.render(<Counter />);
-root.render(<Account />)
+//root.render(<Counter />);
+//root.render(<Account />);
+
+root.render(<MyForm />);
