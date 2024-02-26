@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Minecraft';
+  src: url(../public/fonts/MinecraftRegular.otf);
+}
+
+body {
+  margin: 0;
+  font-family: 'Minecraft', 'Segoe UI', 'Roboto', 'Oxygen', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

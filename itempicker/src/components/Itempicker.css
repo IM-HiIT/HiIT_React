@@ -1,0 +1,13 @@
+
+img {
+    width: 100px;
+    height: 100px;
+    background-color: darkgray;
+    border: 1px solid rgb(170, 164, 166);
+    border-bottom-color: rgb(55, 53, 58);
+    border-right-color: rgb(55, 53, 58);
+  }
+
+  body {
+    background-color: gray;
+  }

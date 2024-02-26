@@ -1,8 +1,8 @@
 import './Input.css'
 
-function Input() {
+function Input(props) {
     return ( 
-        <input className='calc-input'></input>
+        <input className='calc-input' defaultValue={props.value} ></input>
     );
 }
 
